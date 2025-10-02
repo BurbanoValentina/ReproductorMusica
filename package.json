@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "lucide-react": "^0.544.0",
+    "music-metadata-browser": "^2.5.11",
     "react": "^19.1.1",
+    "react-circular-progressbar": "^2.2.0",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {

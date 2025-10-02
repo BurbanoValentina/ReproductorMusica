@@ -16,6 +16,7 @@ body {
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -127,4 +128,43 @@ main > div {
   aside, section {
     width: 100%;
   }
+}
+.titulo-neon {
+  color: #ff4da6; /* Rosado base */
+  font-size: 4rem; /* Tamaño llamativo */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+
+  /* Efecto neón */
+  text-shadow: 
+    0 0 5px #ff4da6,
+    0 0 10px #ff4da6,
+    0 0 20px #ff4da6,
+    0 0 40px #ff1a75,
+    0 0 80px #ff1a75;
+
+  /* Animación */
+  animation: neon-flicker 2s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  from {
+    text-shadow: 
+      0 0 5px #ee75b2,
+      0 0 15px #ee75b2,
+      0 0 30px #ee75b2;
+  }
+  to {
+    text-shadow: 
+      0 0 20px #ee75b2,
+      0 0 40px #ee75b2,
+      0 0 60px #ee75b2,
+      0 0 100px #ee75b2;
+  }
+}
+
+#c {
+  justify-items: center;
 }

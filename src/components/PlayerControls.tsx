@@ -27,13 +27,13 @@ export const PlayerControls: React.FC<PlayerControlsProps> = ({
       {currentSong ? (
         <>
           <div className="text-center">
-            <h3 style={{ color: '#fff', fontSize: '0.95rem', marginBottom: '0.2rem' }}>Reproduciendo</h3>
-            <div style={{ color: '#fff', fontSize: '0.85rem', lineHeight: 1.1 }}>{currentSong.title}</div>
-            <div style={{ color: '#ddd', fontSize: '0.75rem' }}>{currentSong.artist}</div>
+            <h3 style={{ color: '#fff', fontSize: '1rem', marginBottom: '0.2rem' }}>Reproduciendo</h3>
+            <div style={{ color: '#fff', fontSize: '1rem', lineHeight: 1.1 }}>{currentSong.title}</div>
+            <div style={{ color: '#ddd', fontSize: '1rem' }}>{currentSong.artist}</div>
           </div>
 
           <div style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ color: '#e5a9bf', fontSize: '0.75rem', minWidth: '36px', textAlign: 'center' }}>{formatTime((progress / 100) * 180)}</span>
+            <span style={{ color: '#e5a9bf', fontSize: '1rem', minWidth: '36px', textAlign: 'center' }}>{formatTime((progress / 100) * 180)}</span>
             <input
               type="range"
               min="0"
@@ -43,7 +43,7 @@ export const PlayerControls: React.FC<PlayerControlsProps> = ({
               className="form-range"
               style={{ width: '100%', height: '12px', padding: 0 }}
             />
-            <span style={{ color: '#e5a9bf', fontSize: '0.75rem', minWidth: '36px', textAlign: 'center' }}>{currentSong.duration}</span>
+            <span style={{ color: '#e5a9bf', fontSize: '1rem', minWidth: '36px', textAlign: 'center' }}>{currentSong.duration}</span>
           </div>
 
           <div className="flex items-center justify-center gap-2" style={{ marginTop: '0.5rem' }}>
@@ -64,7 +64,6 @@ export const PlayerControls: React.FC<PlayerControlsProps> = ({
     </div>
   );
 };
-
 
 const formatTime = (seconds: number): string => {
   const mins = Math.floor(seconds / 60);
